@@ -1,10 +1,10 @@
 [package]
-name = "kasl"
-version = "0.2.0"
+name = "kasl-core"
+version = "0.1.0"
 edition = "2024"
 license = "Apache-2.0"
-description = "Compile and run KASL programs from your Rust code."
-repository = "https://github.com/hatya-mouse/kasl"
+description = "Parses and translates the kasl code into KASL-IR, an intermediate representation for KASL."
+repository = "https://github.com/hatya-mouse/kasl-core"
 homepage = "https://hatya.dev"
 readme = "README.md"
 
