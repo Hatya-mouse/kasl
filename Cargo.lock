@@ -324,9 +324,9 @@ checksum = "2304e00983f87ffb38b55b444b5e3b60a884b5d30c0fca7d82fe33449bbe55ea"
 
 [[package]]
 name = "indexmap"
-version = "2.13.0"
+version = "2.13.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7714e70437a7dc3ac8eb7e6f8df75fd8eb422675fc7678aff7364301092b1017"
+checksum = "45a8a2b9cb3e0b0c1803dbb0758ffac5de2f425b23c28f518faabd9d805342ff"
 dependencies = [
  "equivalent",
  "hashbrown 0.16.1",
@@ -334,7 +334,7 @@ dependencies = [
 
 [[package]]
 name = "kasl"
-version = "0.2.5"
+version = "0.2.6"
 dependencies = [
  "kasl",
  "kasl-core",
@@ -344,9 +344,9 @@ dependencies = [
 
 [[package]]
 name = "kasl-core"
-version = "0.1.3"
+version = "0.1.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a6b6c66bba4937ad1c17e6085d58378c37819309c5d24e2d787351aa928da7fc"
+checksum = "a3e6d533d6210d6c1e4f22e847e82f65ceb3a9a134aa3ee4840f475d3d83b1cc"
 dependencies = [
  "hashbrown 0.16.1",
  "kasl-ir",
