@@ -334,7 +334,11 @@ dependencies = [
 
 [[package]]
 name = "kasl"
+<<<<<<< HEAD
 version = "0.2.19"
+=======
+version = "0.2.20"
+>>>>>>> db918803b5e80b41b2caa807aed07efb2d9b98fd
 dependencies = [
  "kasl",
  "kasl-core",
