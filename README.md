@@ -39,19 +39,17 @@ func main() {
 
 ### Example 2 — Audio Processing
 
-Here's an example KASL code which generates sine wave with the sample rate of 44100, and the frequency of 440Hz. The program takes an input variable called `time`, and outputs a output variable called `out`.
+Here's an example KASL code which calculates the value of the sine function. The program outputs an output variable called `out`.
 
 ```kasl
 import std
+import math/float
 
-let pi = 3.1415926535
-let sample_rate = 44100.0
-let frequency = 440.0
-
-input time = 0.0
-output out = 0.0
+state x = 0.0
+output y = 0.0
 
 func main() {
-    out = std.float.sin((2.0 * pi * frequency * time) / sample_rate)
+    y = float.sin(x)
+    x = x + 0.1
 }
 ```
