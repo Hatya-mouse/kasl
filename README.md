@@ -45,8 +45,8 @@ Here's an example KASL code which generates sine wave with the sample rate of 44
 import std
 
 let pi = 3.1415926535
-let sample_rate = 44100
-let frequency = 440
+let sample_rate = 44100.0
+let frequency = 440.0
 
 input time = 0.0
 output out = 0.0
