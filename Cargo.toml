@@ -1,6 +1,6 @@
 [package]
 name = "kasl"
-version = "0.2.28"
+version = "0.2.29"
 edition = "2024"
 license = "Apache-2.0"
 description = "Parses and translates the kasl code into KASL-IR, an intermediate representation for KASL."
@@ -16,9 +16,9 @@ path = "src/lib.rs"
 cranelift = ["dep:kasl-cranelift-backend"]
 
 [dependencies]
-kasl-core = "0.1.21"
-kasl-cranelift-backend = { version = "0.1.5", optional = true }
-kasl-ir = "0.3.2"
+kasl-core = "0.1.22"
+kasl-cranelift-backend = { version = "0.1.6", optional = true }
+kasl-ir = "0.3.3"
 
 [dev-dependencies]
 kasl = { path = "./" }
