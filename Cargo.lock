@@ -334,7 +334,7 @@ dependencies = [
 
 [[package]]
 name = "kasl"
-version = "0.2.27"
+version = "0.2.28"
 dependencies = [
  "kasl",
  "kasl-core",
@@ -359,9 +359,9 @@ dependencies = [
 
 [[package]]
 name = "kasl-cranelift-backend"
-version = "0.1.4"
+version = "0.1.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "10b7aa95b9923048aea5c2a76097cff5e0bec95d80ef45cb37c952fccc83d659"
+checksum = "9ca77bfb3d2d98a9c0b64768d2e50d9a447514174ca18d6713fc546604d455e2"
 dependencies = [
  "cranelift",
  "cranelift-codegen",
@@ -373,9 +373,9 @@ dependencies = [
 
 [[package]]
 name = "kasl-ir"
-version = "0.3.1"
+version = "0.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4a5104cbbf0cf6c9ec966234f455199fe2f8cb32c4a1358b8fbc9cac47b9044d"
+checksum = "815b5a3bfe01c1b15a39031e63444dd4600b749367b7f84a710057bd17be70b2"
 
 [[package]]
 name = "libc"
