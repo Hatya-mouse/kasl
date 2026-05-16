@@ -9,8 +9,8 @@ The KASL language itself is implemented as a simple numerical calculation langua
 
 ## How to Run the KASL Programs
 
-Currently, there are no hosts that can run KASL program for audio processing.
-However, you can run KASL code for genuine numerical calculation and there two ways to run it:
+You can use Knodiq DAW to play audio using the KASL language.
+Also, you can run KASL code for genuine numerical calculation and there two ways to run it:
 
 - [`kaslc`](https://github.com/hatya-mouse/kaslc) — A command-line tool to run KASL programs locally.
 - [`kasl.hatya.dev`](https://kasl.hatya.dev) — Features **online KASL playground** where you can run KASL programs without installation.
