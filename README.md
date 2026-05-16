@@ -15,41 +15,48 @@ Also, you can run KASL code for genuine numerical calculation and there two ways
 - [`kaslc`](https://github.com/hatya-mouse/kaslc) — A command-line tool to run KASL programs locally.
 - [`kasl.hatya.dev`](https://kasl.hatya.dev) — Features **online KASL playground** where you can run KASL programs without installation.
 
-## Examples
+## Characteristics
 
-### Example 1 — Fibonacci
+KASL is specificlly designed for audio synthesis, so there are some points that this language is different from the other languages. 
 
-The following program calculates the fibonacci sequence by using `state` variable to store the last two numbers.
-I recommend running this program on the online playground, since it can show the outputs for each iterations, while `kaslc` can only show the output from the last iteration.
+### Input, Output and State Variables
+
+KASL natively supports `input`, `output` and `state` variables.
+`input` variables are the variables that can receive data from the execution host. For example, when you run KASL program on Knodiq and connect an edge to the input in the graph editor, the value will be passed to the variable.
+`output` variables pass the calculated data back to the execution host. To illustrate, this can be used for synthesizers to pass the generated samples to the DAW.
+`state` variables can preserve the stored value over the samples. This is useful for creating a delay buffer to create effects such as echo, or reverb.
+
+### Fixed-Count Loop
+
+KASL supports fix count loop, which can be used by specifying `loop` keyword as follows:
 
 ```kasl
-import std
-
-state a = 0
-state b = 1
-output result = 0
-
 func main() {
-    result = a
-    let next = a + b
-    a = b
-    b = next
+    loop 5 {
+        do_something()
+    }
 }
 ```
 
-### Example 2 — Audio Processing
-
-Here's an example KASL code which calculates the value of the sine function. The program outputs an output variable called `out`.
+This is the same as:
 
 ```kasl
-import std
-import math/float
-
-state x = 0.0
-output y = 0.0
-
 func main() {
-    y = float.sin(x)
-    x = x + 0.1
+    do_something()
+    do_something()
+    do_something()
+    do_something()
+    do_something()
+}
+```
+
+Because KASL compiler can find the definition of the constant, you can also write like this:
+
+```kasl
+func main() {
+    let loop_count = 5
+    loop loop_count {
+        do_something()
+    }
 }
 ```
